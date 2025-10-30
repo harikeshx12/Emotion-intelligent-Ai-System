@@ -1,0 +1,17 @@
+capture:
+camera_index: 0
+frame_rate: 20
+audio_rate: 16000
+models:
+face_detector: "mediapipe"
+face_embedding_model: "resnet18-facemodel.pt" # placeholder
+audio_model: "audio_encoder.pt"
+asr_model: "whisper-small"
+fusion:
+method: "late" # options: late, mid, attention
+logging:
+level: "METADATA_ONLY"
+save_features: true
+paths:
+model_dir: "models/"
+outputs: "outputs/"
